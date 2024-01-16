@@ -1,0 +1,231 @@
+.body {
+  background-color: #092327;
+  position: relative;
+  // font-family: Montserrat;
+}
+
+h1 {
+  font-family: Montserrat Bold;
+}
+.card-header {
+  border-bottom: unset !important;
+}
+
+.bold {
+  font-family: Montserrat Bold;
+}
+.logo {
+  width: 250px;
+  margin-left: -25px;
+  margin-right: 15px;
+}
+
+.highlight {
+  font-weight: 900;
+}
+
+.span-accent {
+  color: #00B8B5;
+}
+.btn-plans {
+  background-color: #00B8B5;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: #134B53 0px 30px 90px;
+}
+
+.navbar h2 {
+  margin-right: 20px;
+}
+
+.text-lightgray {
+  color: #294551
+}
+
+.card {
+  background-color: #094846;
+  width: 390px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: #0F3C43 0px 30px 90px;
+}
+.card-background {
+  background-image: url('https://www.designtide.co/GroupWaves.svg');
+  background-repeat: no-repeat-y;
+  background-size: 100%;
+}
+
+.features {
+  margin-top: 85px;
+
+  .feature-card {
+    background-color: #094846;
+    width: 390px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: #0F3C43 0px 30px 90px;
+  }
+
+  .card-background {
+    background-image: url('https://www.designtide.co/GroupWaves.svg');
+    background-repeat: no-repeat-y;
+    background-size: 100%;
+  }
+}
+
+#plans, .faq {
+  margin-top: 80px;
+}
+
+.question {
+  background-color: #094846;
+  height: 60px;
+  border-radius: 12px;
+  box-shadow: #0F3C43 0px 30px 90px;
+}
+
+.plan {
+  background-color: #094846;
+  height: 500px;
+  width: 370px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: #0F3C43 0px 30px 90px;
+}
+
+.plan-logo {
+  width: 40px;
+}
+
+.plan-logo-sm {
+  width: 33px;
+}
+
+#works {
+  margin-top: 80px !important;
+}
+.hero-section {
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: 110%;
+  background-attachment: scroll;
+  background-image: url('/assets/svg/Wave Line.svg');
+  animation: animatedBackground 13s linear infinite alternate;
+}
+
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.plan-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.light-shadow {
+  //box-shadow: #107E7B 0px 30px 90px !important;
+  box-shadow: #107E7B 0px 30px 60px -30px !important;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+  transition: transform 0.5s ease;
+}
+
+.rotate-back {
+  transform: rotate(0);
+  transition: transform 0.5s ease;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #107E7B;
+  background-color: #092327;
+  height: 130px !important;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .footer-logo {
+    margin-top: 20px;
+    width: 180px;
+  }
+  .sm {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .cards, .plan-cards {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .card, .feature-card, .plan {
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .question {
+    width: 300px !important;
+    height: 80px;
+  }
+  .answer {
+    align-self: start;
+  }
+  .subtitle {
+    width: 100% !important;
+  }
+  .plan-cards {
+    flex-direction: column;
+    .plan {
+      margin-top: 15px;
+      width: 330px;
+    }
+  }
+  .hero-section {
+    background-position-y: 5% !important;
+  }
+  .buttons {
+    flex-direction: column;
+    margin-top: 30px !important;
+    width: 100% !important;
+    align-items: center !important;
+  }
+  .btn-plans, .btn-secondary {
+    width: 100% !important;
+  }
+  .cards {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .card {
+    width: 260px !important;
+    margin-top: 10px;
+    padding-top: 10px;
+    .card-header {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+      border-bottom: unset !important
+    }
+  }
+
+  .features {
+    .feature-card {
+      width: 260px !important;
+      padding-top: 10px;
+      margin-top: 10px;
+      h4 {
+        padding-top: 5px !important;
+      }
+    }
+  }
+}
