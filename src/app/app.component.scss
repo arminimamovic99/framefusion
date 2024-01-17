@@ -173,12 +173,16 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+  .works-card {
+    height: 300px;
+  }
   .question {
     width: 300px !important;
     height: 80px;
   }
   .answer {
     align-self: start;
+    width: 100% !important;
   }
   .subtitle {
     width: 100% !important;
